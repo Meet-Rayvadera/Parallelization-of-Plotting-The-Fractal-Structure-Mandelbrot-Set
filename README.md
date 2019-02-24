@@ -1,5 +1,5 @@
 # Plotting-MandelbrotSet
-Plotting Mandelbrot set is computationally heavy problem. We implemented it using shared memory parallelism with OpenMP. This repository contains code, results, presentation of project.
+Plotting Mandelbrot set is computationally heavy problem. We implemented it using shared memory parallelism with OpenMP interface. This repository contains code, results, presentation of project.
 
 # Introduction
 Mandelbrot set is fractal structure, which is set of complex numbers c for which sequence z_{n+1} = z_n^2+ c does not diverge, when iterated from z1 = 0. Plot can be obtained by sampling complex plane according to pixel of image which we want to generate and then coloring that point according to how rapidly it converges. Black color will denote that point will belong to set and white point will denote point doesn't belong to set because for that point sequence is diverging. We have set bound of 2, so for any point to be in set, absolute value of terms of sequence should be less than 2.
