@@ -1,4 +1,4 @@
-# Plotting-MandelbrotSet
+# Plotting Mandelbrot Set
 Plotting Mandelbrot set is computationally heavy problem. We implemented it using shared memory parallelism with OpenMP interface. This repository contains code, results, presentation of project.
 
 # Introduction
@@ -10,3 +10,4 @@ For plotting Mandelbrot set on complex plane, we have to check sequence for each
 # Brief description about Parallel Implementation
 We will have computation for each point, so we will divide number of rows into different cores by inserting Pragma on outer loop. Here we have to declare iterating variables to be private and Number of Iterations array and PPM image to be shared (So each thread can access it).
 Number of points divided between cores would be almost equal but number of iterations for each point might be different (as iterations will be stopped once value goes out of bound.)
+
